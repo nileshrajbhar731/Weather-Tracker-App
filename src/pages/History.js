@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class History extends Component {
   convertTemp = (i) => {
@@ -215,14 +216,10 @@ export class History extends Component {
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item ">
-                <a className="nav-link" href="/">
-                  Home <span className="sr-only">(current)</span>
-                </a>
+              <Link to="/" className="nav-link">Home</Link>
               </li>
               <li className="nav-item active">
-                <a className="nav-link" href="/history">
-                  Weather History
-                </a>
+              <Link to="history" className="nav-link">Weather History</Link>
               </li>
             </ul>
           </div>
