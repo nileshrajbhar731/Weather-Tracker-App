@@ -27,7 +27,7 @@ export class Testing extends Component {
   }
 
   fixed = async () => {
-
+    localStorage.setItem("e", "[]");
     var e = "mumbai";
     const res = await axios(
       `https://api.openweathermap.org/data/2.5/weather?q=${e}&APPID=39fe84953a8e68d57ebb24695364f8db`
