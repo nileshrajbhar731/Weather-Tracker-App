@@ -4,6 +4,7 @@ import TodayTesting from "./TodayTesting";
 import "../App.css";
 import MainTesting from "./MainTesting";
 import MiddleTesting from "./MiddleTesting";
+import { Link } from "react-router-dom";
 
 export class Testing extends Component {
   constructor() {
@@ -181,9 +182,7 @@ export class Testing extends Component {
                 </a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link" href="/history">
-                  Weather History
-                </a>
+                <Link to="history">Weather History</Link>
               </li>
             </ul>
           </div>
