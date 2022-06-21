@@ -8,8 +8,8 @@ export class App extends Component {
       <>
         <Router>
           <Routes>
-            <Route path="/" element={<Testing />} />
-            <Route path="/history" element={<History />} />
+            <Route path="/"  element={<Testing />} />
+            <Route path="history" element={<History />} />
           </Routes>
         </Router>
       </>

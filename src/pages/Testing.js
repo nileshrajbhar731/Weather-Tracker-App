@@ -26,6 +26,7 @@ export class Testing extends Component {
   }
 
   fixed = async () => {
+
     var e = "mumbai";
     const res = await axios(
       `https://api.openweathermap.org/data/2.5/weather?q=${e}&APPID=39fe84953a8e68d57ebb24695364f8db`
@@ -86,6 +87,7 @@ export class Testing extends Component {
   Savadate = async (e) => {
     e.preventDefault();
     //
+
     const res = await axios(
       `https://api.openweathermap.org/data/2.5/weather?q=${this.state.search}&APPID=39fe84953a8e68d57ebb24695364f8db`
     );
@@ -122,6 +124,7 @@ export class Testing extends Component {
     this.fixed();
   }
   Add = async () => {
+
     const res = await axios(
       `https://api.openweathermap.org/data/2.5/weather?q=${this.state.search}&APPID=39fe84953a8e68d57ebb24695364f8db`
     );
@@ -152,6 +155,7 @@ export class Testing extends Component {
     return alert("add in localStorage");
   };
   render() {
+    console.log(process.env.REACT_APP_WEATHER_API_KEY)
     return (
       <>
         <nav className="navbar navbar-expand-md navbar-light bg-light">

@@ -1,7 +1,6 @@
-import { logDOM } from "@testing-library/react";
 import React, { Component } from "react";
 
-export class history extends Component {
+export class History extends Component {
   convertTemp = (i) => {
     var C = i - 273.15;
     var CT = Math.floor(C);
@@ -253,4 +252,4 @@ export class history extends Component {
   }
 }
 
-export default history;
+export default History;
